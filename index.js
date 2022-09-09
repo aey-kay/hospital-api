@@ -22,4 +22,4 @@ app.use('/doctors', docRoute);
 app.use('/patients', patientRoute);
 app.use('/reports', reportRoute);
 
-app.listen(process.env.PORT, () => console.log('Server up and running'));
+app.listen(process.env.PORT || 3000, () => console.log('Server up and running'));
